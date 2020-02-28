@@ -14,22 +14,23 @@ header img{
   }
    
  section p{
-    display: inline;  
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
     font-family: Kinder Garten;
     font-size: 2em;
     -webkit-text-stroke: .05em black;
     color: rgb(240, 152, 21);
-    margin-right: auto;
-}
+  }
+  section #principalCharacters{
+      text-align: center;
+  }
 
 section p img{
-    margin-right: -.5em; 
     margin-top: 1.5em;
-    margin-inline-start: 1.5em;
     width: 4.5em;
     height: 100%;
-   
-}
+    }
 section #allCharacters {
     display: inline;
     margin-right: auto;
