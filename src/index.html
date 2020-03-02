@@ -6,44 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
-  </head>
-    <header>
-      <img src="images/rym.png">
+  </head>     
+  <body>
+    <header class="rickNmortyTitle">
+      <img src="images/rym.png"> <br>
     </header>
     <main>
-      <section> 
-        <div>
-          <img src="images/rick.png">
-        <img src="images/rickName.png" alt="">
-        </div>
-        <div>
-          <img src="images/morty.png">
-          <img src="images/mortyName.png">
-        </div>
-        <div>
-          <img src="images/summer.png" alt="">
-          <img src="images/summerName.png" alt="">
-        </div>
-        <div>
-          <img src="images/jerry.png" alt="">
-          <img src="images/jerryName.png" alt="">
-        </div>
-        <div>
-          <img src="images/beth.png" alt="">
-          <img src="images/bethName.png" alt="">
-        </div>      
-      </section>
-      <section>
-        <div>
-          <img src="images/btnAllCharacters.png" alt="">
-          <img src="images/btnRicks.png" alt=" ">
-          <img src="images/btnMortys.png" alt="">
-        </div>
+      <section class="principalBtn">
+        <a class="btn" href="#idCard"><img src="images/rick.png"  class="image" alt=""> <img src="images/rickName.png" class="name" alt=""></a>
+        <a class="btn" href="#idCard"><img src="images/morty.png" class="image" alt=""><img src="images/mortyName.png" class="name" alt=""></a>
+        <a class="btn" href="#idCard"><img src="images/summer.png" class="image" alt=""><img src="images/summerName.png" class="name" alt=""></a>
+        <a class="btn" href="#idCard"><img src="images/jerry.png" class="image"alt=""><img src="images/jerryName.png" class="name" alt=""></a>
+        <a class="btn" href="#idCard"><img src="images/beth.png" class="image" alt=""><img src="images/bethName.png" class="name" alt=""></a>
+      </section> 
+      <section class="plasmaBtn">
+        <img src="images/btnAllCharacters.png" alt="">
+        <img src="images/btnRicks.png" alt="">
+        <img src="images/btnMortys.png" alt="">
       </section>
     </main>
-    
-  <body>
-    <div id="root"></div>
+    <section class="card" id="idCard">
+      <div class="intergalacticId">
+        <p class="idTitle">Intergalactic ID</p>
+        <a id="close" href="#">&times;</a>
+        <img id="idImage">
+        <input id="idName" type="text">
+        <div class="specifications">
+          <input id="idStatus" type="text">
+          <input id="idSpecies" type="text">
+          <input id="idType" type="text">
+          <input id="idGender" type="text">
+        </div>
+        <div>
+          <input id="idOrigin" type="text">
+          <input id="idLocation" type="text">
+        </div>
+      </div>
+    </section>
+
     <script type="module" src="main.js"></script>
   </body>
 </html>
