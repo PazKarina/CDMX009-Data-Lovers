@@ -1,46 +1,71 @@
 body {
     background-image: url(images/background1.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0em;
 }
-header img{
-    display: block;
-    margin: auto;
-    width: 32em;
-    height: 100%;    
+.rickNmortyTitle{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0em 3em;     
 }
-@font-face {
-    font-family: "Kinder Garten";
-    src: url("kindergarten.ttf");
-  }
-   
- section p{
-    display: inline-flex;
+.principalBtn{
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+    flex-wrap: wrap;
+}
+.btn{
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    font-family: Kinder Garten;
-    font-size: 2em;
-    -webkit-text-stroke: .05em black;
-    color: rgb(240, 152, 21);
-  }
-  section #principalCharacters{
-      text-align: center;
-  }
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.name{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
 
-section p img{
-    margin-top: 1.5em;
-    width: 4.5em;
-    height: 100%;
-    }
-section #allCharacters {
-    display: inline;
-    margin-right: auto;
-
-    }
-
-section #allCharacters img {   
-    margin-top: 4em;
-    margin-right: 4em;
-    margin-inline-start: 4em;
-    width: 12em;
-    height: 100%;
+}
+.plasmaBtn{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:target{
+    visibility: visible;
+    opacity: 1;
+}
+.intergalacticId{
+  margin: 70px auto;
+  padding: 20px;
+  background: black;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.idTitle{
+  font-family: kindergarten; 
+  font-size: x-large;
+  color: #fff; 
 }
