@@ -1,13 +1,6 @@
-// import data from './data/injuries/injuries.js';
-// import data from './data/lol/lol.js';
-// import data from './data/patient/patient.js';
-// import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/steam/steam.js';
-// import data from './data/steam/worldbank.js';
+import data from './data/rickandmorty/rickandmorty.js';
 
-// esta es una función de ejemplo
-
-export const example = () => {
-  return 'example';
-};
+//funcion para encontrar desde la data a los 5 personajes principales
+export const principalCharacters = data.results.filter(char =>
+(char.id==1||char.id==2||char.id==3||char.id==4||char.id==5))
+console.log(principalCharacters)

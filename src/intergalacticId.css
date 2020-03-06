@@ -13,12 +13,12 @@
     visibility: visible;
     opacity: 1;
 }
-#popupBody{
+section#idCard{
     width: auto;
     padding: auto;
     border-radius: 15px;
     box-shadow: 0 0 5px rgb(80, 228, 50);
-    background: black;
+    background-size: inherit;
     position: relative;
     margin: 20% auto;
     transition: all 5s ease-in-out;
@@ -28,7 +28,7 @@
     -webkit-text-stroke: .05em black;
     color: rgb(240, 152, 21);
 }
-#cerrar{
+#close{
     position: absolute;
     top: 20px;
     right: 30px;
