@@ -12,7 +12,7 @@ body {
     justify-content: center;
     margin: 2em 0em 3em;     
 }
-.principalBtn{
+.principalButton{
     display: flex;
     align-content: flex-end;
     justify-content: space-around;
