@@ -1,57 +1,24 @@
 import {principalCharacters, allCharacters} from './data.js';
-console.log(allCharacters)
-
-document.querySelector('#rickPrincipal').addEventListener("click", btnRick)
-function btnRick (){
+document.querySelector(".screenCharacters").style.display="none";
+const a = principalCharacters
+function btnRick (e){
+const b = e.target.id
     document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[0].name)}</li><br>
-    <li>Status: ${(principalCharacters[0].status)}</li><br>
-    <li>Especie: ${(principalCharacters[0].species)}</li><br>
-    <li>Genero: ${(principalCharacters[0].gender)}</li>`
+    `<li>Nombre: ${(a[b].name)}</li><br>
+    <li>Status: ${(a[b].status)}</li><br>
+    <li>Especie: ${(a[b].species)}</li><br>
+    <li>Genero: ${(a[b].gender)}</li>
+    <li>Origin: ${(a[b].origin.name)}</li>`
 };
+const btns = document.querySelectorAll('.btn')
+btns.forEach(el=>{el.addEventListener("click", btnRick)})
 
-document.querySelector('#mortyPrincipal').addEventListener("click", btnMorty)
 
-function btnMorty (){
-    document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[1].name)}</li><br>
-    <li>Status: ${(principalCharacters[1].status)}</li><br>
-    <li>Especie: ${(principalCharacters[1].species)}</li><br>
-    <li>Genero: ${(principalCharacters[1].gender)}</li>`
-};
 
-document.querySelector('#summerPrincipal').addEventListener("click", btnSummer)
 
-function btnSummer (){
-    document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[2].name)}</li><br>
-    <li>Status: ${(principalCharacters[2].status)}</li><br>
-    <li>Especie: ${(principalCharacters[2].species)}</li><br>
-    <li>Genero: ${(principalCharacters[2].gender)}</li>`
-};
 
-document.querySelector('#jerryPrincipal').addEventListener("click", btnJerry)
 
-function btnJerry (){
-    document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[4].name)}</li><br>
-    <li>Status: ${(principalCharacters[4].status)}</li><br>
-    <li>Especie: ${(principalCharacters[4].species)}</li><br>
-    <li>Genero: ${(principalCharacters[4].gender)}</li>`
-};
-
-document.querySelector('#bethPrincipal').addEventListener("click", btnBeth)
-
-function btnBeth (){
-    document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[3].name)}</li><br>
-    <li>Status: ${(principalCharacters[3].status)}</li><br>
-    <li>Especie: ${(principalCharacters[3].species)}</li><br>
-    <li>Genero: ${(principalCharacters[3].gender)}</li>`
-};
-
-//aqui empieza la seccion de todos los personajes
-//oculta pantalla principal y muestra la segunda seccion
+//habilitar Pantallas
 function screenCharacters () {
     let screen = document.querySelector(".principalScreen")
     screen.style = "display:none";
@@ -59,9 +26,13 @@ function screenCharacters () {
 }
 document.querySelector(".btnAllCharacters").addEventListener("click", screenCharacters)
 
+function screenRicks () {
+
+}
+
     //mostrar sólo imagen y nombre de los personajes
 const showCharacters = ()=> {
- allCharacters.forEach((item) => {
+ allCharacters.forEach((item, i) => {
     let boxCharacters=item.image; 
     let nameCharacter= item.name;
     let container= document.createElement('div')
@@ -84,6 +55,9 @@ const showCharacters = ()=> {
     container.style.height= "20em";
     img.style.width = "14em";
     img.style.height = "14em";
+
+    container.id = i
+
     document.querySelector(".appendchild").appendChild(node);
  })
 }
