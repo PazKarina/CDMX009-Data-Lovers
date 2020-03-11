@@ -1,0 +1,96 @@
+body {
+    background-image: url(images/background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0em;
+    font-family: Kinder Garten;
+    font-size: 2em;
+    color: rgb(240, 152, 21);
+}
+.rickNmortyTitle{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em 2em;     
+}
+.principalButton{
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+    flex-wrap: wrap;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.name{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.plasmaBtn{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:target{
+    visibility: visible;
+    opacity: 1;
+}
+.intergalacticId{
+  margin: 70px auto;
+  padding: 20px;
+  background: black;
+  font-size: large;
+  color: rgb(14, 170, 27);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.idTitle{
+  font-family: kindergarten; 
+  font-size: x-large;
+  text-align: center;
+  color: #fff; 
+}
+#close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-family: Kinder Garten;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(105, 33, 221);
+    transition: all 200ms;
+}
+.btnAllCharacters{
+    cursor: pointer;
+}
+.appendchild{
+    width: 90%;
+    height: 50%;
+    overflow: auto;
+}
