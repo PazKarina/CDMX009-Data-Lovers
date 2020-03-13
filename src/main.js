@@ -1,65 +1,25 @@
-import {principalCharacters, allCharacters} from './data.js';
+import { principalCharacters, allCharacters, allRicks, allMortys } from './data.js'
+console.log(principalCharacters)
 console.log(allCharacters)
-/*/funcion recorriendo (swicht)
-const imprimirResultado = document.querySelectorAll('btnPrincipal').addEventListener('click', );
+console.log(allRicks)
+console.log(allMortys)
 
-switch(imprimirResultado) {
-    case btnRick:
-    document.querySelector('#rickPrincipal').addEventListener("click", btnRick);
-break;
-}*/
+// probando ciclo para personajes principales
 
-//ésta funcion me presneta los datos del personaje 1 que se encuentra en la posición [0]
-document.querySelector('#rickPrincipal').addEventListener("click", btnRick)
-
-function btnRick (){
-
-    document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[0].name)}</li><br>
-    <li>Status: ${(principalCharacters[0].status)}</li><br>
-    <li>Especie: ${(principalCharacters[0].species)}</li><br>
-    <li>Genero: ${(principalCharacters[0].gender)}</li>`
+const a = principalCharacters
+function btnPrincipal(e) {
+    const b = e.target.id
+    document.querySelector("#idName").innerHTML =
+        `<li>Nombre: ${(a[b].name)}</li><br>
+    <li>Status: ${(a[b].status)}</li><br>
+    <li>Especie: ${(a[b].species)}</li><br>
+    <li>Genero: ${(a[b].gender)}</li><br>
+    <li>Origin: ${(a[b].origin.name)}</li>`
 };
+const btns = document.querySelectorAll('.btn')
+btns.forEach(el => { el.addEventListener("click", btnPrincipal) })
 
-document.querySelector('#mortyPrincipal').addEventListener("click", btnMorty)
 
-function btnMorty (){
-    document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[1].name)}</li><br>
-    <li>Status: ${(principalCharacters[1].status)}</li><br>
-    <li>Especie: ${(principalCharacters[1].species)}</li><br>
-    <li>Genero: ${(principalCharacters[1].gender)}</li>`
-};
-
-document.querySelector('#summerPrincipal').addEventListener("click", btnSummer)
-
-function btnSummer (){
-    document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[2].name)}</li><br>
-    <li>Status: ${(principalCharacters[2].status)}</li><br>
-    <li>Especie: ${(principalCharacters[2].species)}</li><br>
-    <li>Genero: ${(principalCharacters[2].gender)}</li>`
-};
-
-document.querySelector('#jerryPrincipal').addEventListener("click", btnJerry)
-
-function btnJerry (){
-    document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[4].name)}</li><br>
-    <li>Status: ${(principalCharacters[4].status)}</li><br>
-    <li>Especie: ${(principalCharacters[4].species)}</li><br>
-    <li>Genero: ${(principalCharacters[4].gender)}</li>`
-};
-
-document.querySelector('#bethPrincipal').addEventListener("click", btnBeth)
-
-function btnBeth (){
-    document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[3].name)}</li><br>
-    <li>Status: ${(principalCharacters[3].status)}</li><br>
-    <li>Especie: ${(principalCharacters[3].species)}</li><br>
-    <li>Genero: ${(principalCharacters[3].gender)}</li>`
-};
 
 //aqui empieza la seccion de todos los personajes
       //oculta pantalla principal y muestra la segunda seccion
@@ -70,17 +30,33 @@ function screenCharacters () {
 }
 document.querySelector(".btnAllCharacters").addEventListener("click", screenCharacters)
 
+  
     //mostrar sólo imagen y nombre de los personajes
-const showCharacters = ()=> {
- allCharacters.forEach((item) => {
-    let boxCharacters=item.image; 
-    let box= document.createElement('img');
-    let btn= document.createElement('button');
-    btn.appendChild(box);
-    box.src=boxCharacters;
-    let node=btn;
-    
-    document.querySelector(".screenCharacters").appendChild(node);
- })
+const showCharacters = () => {
+    allCharacters.forEach((item) => {
+        let boxCharacters = item.image;
+        let nameCharacter = item.name;
+        let name = document.createElement('p');
+        let img = document.createElement('img');
+        let btn = document.createElement('button');
+        btn.className = ('btn')
+        let node = btn;
+        btn.appendChild(name);
+        btn.appendChild(img);
+        name.innerHTML = nameCharacter;
+        img.src = boxCharacters;
+        name.style.fontFamily = "kindergarten";
+        name.style.fontSize = "20px";
+        name.style.color = "white";
+        btn.style.border = "none";
+        btn.style.background = "0,0,0,0.0"
+        btn.style.width = "20em";
+        btn.style.height = "20em";
+        img.style.width = "14em";
+        img.style.height = "14em";
+
+        document.querySelector(".screenCharacters").appendChild(node);
+    })
+    EventTarget
 }
-document.querySelector(".btnAllCharacters"). addEventListener("click", showCharacters)
+document.querySelector(".btnAllCharacters").addEventListener("click", showCharacters)
