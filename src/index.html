@@ -12,18 +12,18 @@
     <header class="rickNmortyTitle">
       <img src="images/rym.png"> <br>
     </header>
-    <main class="principalScreen">
+    <main class="principalScreen" id="firstScreen">
       <section class="principalButton" id="principalBtn">
-        <a class="btn" href="#idCard" id="rickPrincipal"><img id="0" src="images/rick.png" class="image" alt=""><img src="images/rickName.png" class="name" alt=""></a>
-        <a class="btn" href="#idCard" id="mortyPrincipal"><img id="1" src="images/morty.png" class="image" alt=""><img src="images/mortyName.png" class="name" alt=""></a>
-        <a class="btn" href="#idCard" id="summerPrincipal"><img id= "2" src="images/summer.png" class="image" alt=""><img src="images/summerName.png" class="name" alt=""></a>
-        <a class="btn" href="#idCard" id="jerryPrincipal"><img id="4" src="images/jerry.png" class="image"alt=""><img src="images/jerryName.png" class="name" alt=""></a>
-        <a class="btn" href="#idCard" id="bethPrincipal"><img id="3"src="images/beth.png" class="image" alt=""><img src="images/bethName.png" class="name" alt=""></a>
+        <a class="btn" href="#idCard" id="rickPrincipal"><img id="0" src="images/rick.png" class="image" alt=""><img src="images/rickName.png" id= "0" class="name" alt=""></a>
+        <a class="btn" href="#idCard" id="mortyPrincipal"><img id="1" src="images/morty.png" class="image" alt=""><img src="images/mortyName.png" id="1" class="name" alt=""></a>
+        <a class="btn" href="#idCard" id="summerPrincipal"><img id= "2" src="images/summer.png" class="image" alt=""><img src="images/summerName.png" id="2" class="name" alt=""></a>
+        <a class="btn" href="#idCard" id="jerryPrincipal"><img id="4" src="images/jerry.png" class="image"alt=""><img src="images/jerryName.png" id="4" class="name" alt=""></a>
+        <a class="btn" href="#idCard" id="bethPrincipal"><img id="3"src="images/beth.png" class="image" alt=""><img src="images/bethName.png" id="3" class="name" alt=""></a>
       </section> 
       <section class="plasmaBtn">
         <img src="images/btnAllCharacters.png" alt="" class="btnAllCharacters">
-        <img src="images/btnRicks.png" alt="">
-        <img src="images/btnMortys.png" alt="">
+        <img src="images/btnRicks.png" alt="" class="btnRicks">
+        <img src="images/btnMortys.png" alt="" class="btnMortys">
       </section>
     </main>
     <section class="card" id="idCard">
@@ -36,10 +36,25 @@
       </div>
     </section>
 
-    <section class="screenCharacters">
-      <div class="appendchild"></div>
+    <section class= "screens" id="screenCharacters">
+      <a class="close" id="close1" href="#"><img src="images/btnClose.png" alt=""></a>
+      <div class="appendchild" id="appendchild1"></div>
+      
 
     </section>
+    <section class= "screens" id="screenRicks">
+      <a class="close" id="close2" href="#"><img src="images/btnClose.png" alt=""></a>
+      <div class="appendchild" id="appendchild2"></div>
+      
+
+    </section>
+    <section class= "screens" id="screenMortys">
+      <a class="close" id="close3" href="#"><img src="images/btnClose.png" alt=""></a>
+      <div class="appendchild" id="appendchild3"></div>
+      
+
+    </section>
+
 
     <script type="module" src="main.js"></script>
   </body>
