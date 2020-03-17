@@ -8,7 +8,7 @@ function screenCharacters () {
     document.querySelector("#screenCharacters").style.display="block";
 }
 document.querySelector("#screenCharacters").style.display="none";
-document.querySelector(".btnAllCharacters").addEventListener("click", screenCharacters)
+document.querySelector("#btnAllCharacters").addEventListener("click", screenCharacters)
 
 //Ricks
 function screenMultiRicks (){
@@ -16,7 +16,7 @@ function screenMultiRicks (){
     screen.style = "display:none";
     document.querySelector("#screenRicks").style.display = "block";
 }
-document.querySelector(".btnRicks").addEventListener("click",screenMultiRicks)
+document.querySelector("#btnRicks").addEventListener("click",screenMultiRicks)
 document.querySelector("#screenRicks").style.display = "none";
 
 //Mortys
@@ -25,7 +25,7 @@ function screenMultiMortys (){
     screen.style = "display:none";
     document.querySelector("#screenMortys").style.display = "block";
 }
-document.querySelector(".btnMortys").addEventListener("click",screenMultiMortys)
+document.querySelector("#btnMortys").addEventListener("click",screenMultiMortys)
 document.querySelector("#screenMortys").style.display = "none";
 
 //close
@@ -54,11 +54,12 @@ document.querySelector("#close3").addEventListener("click", close3)
 
 function idCard (e){
     document.querySelector("#idName").innerHTML = 
-    `<li>Nombre: ${(principalCharacters[e.target.id].name)}</li><br>
-    <li>Status: ${(principalCharacters[e.target.id].status)}</li><br>
-    <li>Especie: ${(principalCharacters[e.target.id].species)}</li><br>
-    <li>Genero: ${(principalCharacters[e.target.id].gender)}</li><br>
-    <li>Origen: ${(principalCharacters[e.target.id].origin.name)}</li>`
+    `<figure><img class="imgCard" src=${(principalCharacters[e.target.id].image)} > </img></figure>
+    <div class="divs"><p class="label">Nombre:</p> <p class="results"> ${(principalCharacters[e.target.id].name)}</p></div>
+    <div class="divs"><p class="label">Status: </p> <p class="results">${(principalCharacters[e.target.id].status)}</p></div>
+    <div class="divs"><p class="label">Especie:</p> <p class="results"> ${(principalCharacters[e.target.id].species)}</p></div>
+    <div class="divs"><p class="label">Género: </p> <p class="results">${(principalCharacters[e.target.id].gender)}</p></div>
+    <div class="divs"><p class="label">Origen:</p> <p class="results"> ${(principalCharacters[e.target.id].origin.name)}</p></div>`
 };
 const btns = document.querySelectorAll('.principalButton')
 btns.forEach(el=>{el.addEventListener("click",idCard)})
@@ -92,7 +93,7 @@ const showCharacters = ()=> {
     document.querySelector("#appendchild1").appendChild(node);
  })
 }
-document.querySelector(".btnAllCharacters").addEventListener("click", showCharacters)
+document.querySelector("#btnAllCharacters").addEventListener("click", showCharacters)
 
 // mostrar todos los Ricks
 const showRicks = ()=> {
@@ -121,7 +122,7 @@ const showRicks = ()=> {
        document.querySelector("#appendchild2").appendChild(node);
     })
 }
-document.querySelector(".btnRicks").addEventListener("click", showRicks)
+document.querySelector("#btnRicks").addEventListener("click", showRicks)
 
 // mostrar todos los Mortys
 const showMortys = ()=> {
@@ -150,4 +151,4 @@ const showMortys = ()=> {
        document.querySelector("#appendchild3").appendChild(node);
     })
 }
-document.querySelector(".btnMortys").addEventListener("click", showMortys)
+document.querySelector("#btnMortys").addEventListener("click", showMortys)

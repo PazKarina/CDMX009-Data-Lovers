@@ -27,6 +27,13 @@ body {
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    
+}
+.image{
+    animation: pulse1 2s infinite;
+}
+.image:hover{
+    animation: rotate 3s infinite;
 }
 .name{
     display: flex;
@@ -38,10 +45,13 @@ body {
 .plasmaBtn{
     display: flex;
     justify-content: space-around;
-    margin: 2em;
+    margin: 1em;
     align-content: space-around;
     flex-wrap: wrap;
     cursor: pointer;
+}
+.pBtn:hover{
+    animation: pulse 1s infinite;
 }
 .card{
     position: fixed;
@@ -63,17 +73,43 @@ body {
   padding: 20px;
   background: black;
   font-size: large;
-  color: rgb(14, 170, 27);
-  border-radius: 5px;
+  border-radius: 10px;
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgCard{
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+}
+.label{
+    font-family: kindergarten;
+    color: orange;
+    border-color: black;
+
+}
+.results{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    justify-content: right;
+}
+.divs{
+    display: flex;
+    flex-direction: row;
 }
 .idTitle{
   font-family: kindergarten; 
-  font-size: x-large;
+  font-size: 30pt;
   text-align: center;
-  color: #fff; 
+  color: rgb(193, 241, 60); 
+  margin: 0;
 }
 #close{
     position: absolute;
@@ -84,7 +120,7 @@ body {
 .close{
     position: absolute;
     top: 230px;
-    right: 60px;
+    right: 200px;
     transition: all 200ms;
 }
 
@@ -99,5 +135,45 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+@keyframes pulse{
+    0%{
+        transform: scale(.9);
+        filter: drop-shadow(8px 8px 10px black);
+    }
+    50%{
+        transform: scale(1); 
+        filter: drop-shadow(8px 8px 10px black);
+    }
+    100%{
+        transform: scale(.9); 
+        filter: drop-shadow(8px 8px 10px black);
+
+    }
+}
+@keyframes pulse1{
+    0%{
+        transform: scale(.93);
+    }
+    50%{
+        transform: scale(1);   
+    }
+    100%{
+        transform: scale(.9);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        filter: drop-shadow(8px 8px 10px black);
+    }
+    50%{
+        transform: rotate(360deg); 
+        filter: drop-shadow(8px 8px 10px black) ;
+    }
+    100%{
+        transform: rotate(360deg);
+        filter: drop-shadow(8px 8px 10px black);
+    }
 }
