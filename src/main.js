@@ -89,7 +89,7 @@ const showCharacters = ()=> {
     img.style.height = "14em";
 
     allCharacters.id = i
-    btn.className= "allbtn"
+    btn.class= "allbtn"
     document.querySelector("#appendchild1").appendChild(node);
  })
 }
@@ -118,7 +118,7 @@ const showRicks = ()=> {
        img.style.width = "14em";
        img.style.height = "14em";
    
-       btn.className= "allbtn"
+       btn.class= "allbtn"
        document.querySelector("#appendchild2").appendChild(node);
     })
 }
@@ -147,7 +147,7 @@ const showMortys = ()=> {
        img.style.width = "14em";
        img.style.height = "14em";
    
-       btn.className= "allbtn"
+       btn.class= "allbtn"
        document.querySelector("#appendchild3").appendChild(node);
     })
 }

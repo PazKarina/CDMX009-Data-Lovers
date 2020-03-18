@@ -7,22 +7,14 @@ console.log(principalCharacters)
 
 export const allCharacters = data.results
 console.log(allCharacters)
-// export const all =() =>{
-// allCharacters.forEach(i) =>{
-//     let idChar = allCharacters
-//     idChar.id = i
+
+// const getId(i) =>{
+//     let char = 
 // }
+
 
 
 export const ricks = data.results.filter(value => (value.name.includes("Rick")))
 console.log(ricks)
 
 export const mortys = data.results.filter(value => (value.name.includes("Morty")))
-// export const principalCharacters = data.results.filter(char => {
-
-//     if (char.id === e.target.id){
-//             console.log(char)
-//         return char.id
-//     }
-// })
-
