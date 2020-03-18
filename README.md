@@ -11,18 +11,18 @@ En un ideal de tiempo ilimitado tambien se consideraron: una seccion que ordenar
 
 **_Pantalla Principal_**
 
-![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/pantallaPrincipal.jpg)
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/pantallaPrincipal.jpeg)
 
 **_Pantalla Responsive_**
 
-![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/vertical.jpg)
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/vertical.jpeg)
 
 
 De esta manera el usuario que interqactuara con la pagina podría acceder a la información de cada personaje a traves de una modal donde se muestran algunas caracteristicas del personaje elegido. 
 
 **_Modal_**
 
-![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/card.jpg)
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/card.jpeg)
 
 #### Prototipo de alta fidelidad
 
