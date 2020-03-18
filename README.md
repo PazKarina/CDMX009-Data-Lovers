@@ -1,5 +1,7 @@
 # Data Lovers
 
+[Demo](https://rickymorty.now.sh/#)
+
 ## Proceso de Diseño
 Para realizar este proyecto se selecciono en dupla la data Rick and Morty por ser el tema con mayor afinidad, del cúal se desprende que lxs principales usuarixs son personas en cualquier rango de edad que conocen, han visto o desean saber sobre la serie y que estan interesadas en conocer algunos datos de los personajes  como son estatus, especie, genero, localizacion, etc.
 
