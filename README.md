@@ -35,57 +35,14 @@ Quedando el prototipo final:
 ![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypeTodos.jpg)
 
 **Modal/popup**
+
 ![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypeModal.jpg)
 
 ![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypeModal1.jpg)
+
 #### Testeos de usabilidad
 
 Duerante éstos testeos se encontro que lxs ususarixs podrían navegar en el modal sin tener que cerrar pantalla y que no estaban (o estaban muy poco intetresados) en la liga con información de los creadores por lo que ésta última se decidio eliminar
 
 
 
-## Objetivos de aprendizaje
-
-### UX
-
-- [x] Diseñar la aplicación pensando y entendiendo al usuario.
-- [x] Crear prototipos para obtener _feedback_ e iterar.
-- [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
-- [x] Planear y ejecutar _tests_ de usabilidad.
-
-### HTML y CSS
-
-- [x] Entender y reconocer por qué es importante el HTML semántico.
-- [x] Identificar y entender tipos de selectores en CSS.
-- [x] Entender como funciona `flexbox` en CSS.
-- [x] Construir tu aplicación respetando el diseño planeado (maquetación).
-
-### DOM
-
-- [x] Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
-- [x] Manejar eventos del DOM. (addEventListener)
-- [x] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
-
-### Javascript
-
-- [x] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
-- [x] Manipular objects (key | value).
-- [ ] Entender el uso de condicionales (`if-else` | `switch`).
-- [ ] Entender el uso de bucles (`for` | `forEach`).
-- [ ] Entender la diferencia entre expression y statements.
-- [ ] Utilizar funciones (parámetros | argumentos | valor de retorno).
-- [ ] Entender la diferencia entre tipos de datos atómicos y estructurados.
-- [x] Utilizar ES Modules (`import` | `export`).
-
-### Pruebas Unitarias (_testing_)
-- [ ] Testear funciones (funciones puras).
-
-### Git y GitHub
-- [x] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
-- [x] Utilizar los repositorios de GitHub (`clone` | `fork` | gh-pages).
-- [x] Colaborar en Github (pull requests).
-
-### Buenas prácticas de desarrollo
-- [ ] Organizar y dividir el código en módulos (Modularización).
-- [x] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
-- [ ] Utilizar linter para seguir buenas prácticas (ESLINT).
