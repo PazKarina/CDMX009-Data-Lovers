@@ -18,7 +18,7 @@ En un ideal de tiempo ilimitado tambien se consideraron: una seccion que ordenar
 ![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/vertical.jpeg)
 
 
-De esta manera el usuario que interqactuara con la pagina podría acceder a la información de cada personaje a traves de una modal donde se muestran algunas caracteristicas del personaje elegido. 
+De esta manera el usuario que interactua con la pagina podría acceder a la información de cada personaje a traves de una modal donde se muestran algunas caracteristicas del personaje elegido. 
 
 **_Modal_**
 
@@ -29,7 +29,7 @@ De esta manera el usuario que interqactuara con la pagina podría acceder a la i
 Quedando el prototipo final:
 
 **_Pantalla Principal_**
-![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypePricipal.jpg)
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypePrincipal.jpg)
 
 **_Pantalla con todos los personajes_**
 ![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypeTodos.jpg)
