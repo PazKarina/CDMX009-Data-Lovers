@@ -11,25 +11,33 @@ En un ideal de tiempo ilimitado tambien se consideraron: una seccion que ordenar
 
 **_Pantalla Principal_**
 
-![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/pantallaPrincipal.png)
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/pantallaPrincipal.jpg)
 
 **_Pantalla Responsive_**
 
-![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/vertical.png)
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/vertical.jpg)
 
 
 De esta manera el usuario que interqactuara con la pagina podría acceder a la información de cada personaje a traves de una modal donde se muestran algunas caracteristicas del personaje elegido. 
 
 **_Modal_**
 
-![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/card.png)
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/card.jpg)
 
 #### Prototipo de alta fidelidad
 
 Quedando el prototipo final:
 
-![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/
+**_Pantalla Principal_**
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypePricipal.jpg)
 
+**_Pantalla con todos los personajes_**
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypeTodos.jpg)
+
+**Modal/popup**
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypeModal.jpg)
+
+![alt text](https://raw.githubusercontent.com/PazKarina/CDMX009-Data-Lovers/master/sketch/prototypeModal1.jpg)
 #### Testeos de usabilidad
 
 Duerante éstos testeos se encontro que lxs ususarixs podrían navegar en el modal sin tener que cerrar pantalla y que no estaban (o estaban muy poco intetresados) en la liga con información de los creadores por lo que ésta última se decidio eliminar
