@@ -43,7 +43,8 @@ Quedando el prototipo final:
 Duerante éstos testeos se encontro que lxs ususarixs podrían navegar en el modal sin tener que cerrar pantalla y que no estaban (o estaban muy poco intetresados) en la liga con información de los creadores por lo que ésta última se decidio eliminar
 
 
-## 3. Objetivos de aprendizaje
+
+## Objetivos de aprendizaje
 
 ### UX
 
