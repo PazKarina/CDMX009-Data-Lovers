@@ -1,6 +1,6 @@
 # Data Lovers
 
-[Demo](https://rickymorty.now.sh/#)
+[Mostar Demo](https://rickymorty.now.sh/#)
 
 ## Proceso de Diseño
 Para realizar este proyecto se selecciono en dupla la data Rick and Morty por ser el tema con mayor afinidad, del cúal se desprende que lxs principales usuarixs son personas en cualquier rango de edad que conocen, han visto o desean saber sobre la serie y que estan interesadas en conocer algunos datos de los personajes  como son estatus, especie, genero, localizacion, etc.
@@ -46,5 +46,6 @@ Quedando el prototipo final:
 
 Duerante éstos testeos se encontro que lxs ususarixs podrían navegar en el modal sin tener que cerrar pantalla y que no estaban (o estaban muy poco intetresados) en la liga con información de los creadores por lo que ésta última se decidio eliminar
 
+## Proyecto
 
-
+Así se ve el proyecto [Mostar Demo](https://rickymorty.now.sh/#)
